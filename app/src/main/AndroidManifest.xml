@@ -13,7 +13,13 @@
         android:theme="@style/Theme.MobileDevelopmentassessment"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.mobile_development_assessment.MainActivity3login"
+            android:exported="false" />
+        <activity
+            android:name="com.example.mobile_development_assessment.MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name="com.example.mobile_development_assessment.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
