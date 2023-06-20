@@ -4,10 +4,10 @@ import android.telephony.PhoneNumberUtils
 
 class BillManagement {
 
-//        var tilNames:String,
-//        var etPhoneNumber:String,
-//        var Email:String,
-//        var Password:String,
+        var tvNames:String,
+        var tilPhoneNumber:String,
+        var Email:String,
+        var Password:String,
 
 
 
