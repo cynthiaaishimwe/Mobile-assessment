@@ -4,41 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.mobile_development_assessment.MainActivity3login">
-
-    <TextView
-        android:id="@+id/tvTextView"
-        android:layout_width="215dp"
-        android:layout_height="95dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="108dp"
-        android:text="Login Page"
-        android:textColor="#4CAF50"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    tools:context="com.example.UI.MainActivity3login">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tvEmail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="165dp"
         android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/tilPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTextView">
+        app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
-            android:textSize="34sp"
-            android:textStyle="bold" />
+            android:textSize="20sp"
+            android:textStyle="normal" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -57,46 +44,76 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
-            android:textSize="34sp"
-            android:textStyle="bold" />
+            android:textSize="20sp"
+            android:textStyle="normal" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
-        android:id="@+id/tvButton"
-        android:layout_width="123dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="125dp"
+    <TextView
+        android:id="@+id/tvAccount"
+        android:layout_width="253dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="80dp"
+        android:text="LogIn to your Account"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="201dp"
         android:layout_marginTop="50dp"
-        android:layout_marginEnd="125dp"
-        android:text="Login"
-        android:textSize="24sp"
+        android:layout_marginEnd="103dp"
+        android:text="Forgot Password?"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tilPassword" />
 
-    <TextView
-        android:id="@+id/tvTextView2"
-        android:layout_width="277dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="82dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="82dp"
-        android:text="Do not have an account?"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvButton" />
-
     <Button
-        android:id="@+id/tvButton2"
+        android:id="@+id/btnButton"
+        android:layout_width="299dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="177dp"
+        android:background="#CDD187"
+        android:text="Login"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvForgotPassword" />
+
+    <TextView
+        android:id="@+id/tvNoAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="136dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="136dp"
-        android:text="Sign Up"
-        android:textSize="20sp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="194dp"
+        android:text="Don't have an account?"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTextView2" />
+        app:layout_constraintTop_toBottomOf="@+id/tvForgotPassword" />
+
+    <TextView
+        android:id="@+id/tvSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="125dp"
+        android:text="Sign Up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvNoAccount"
+        app:layout_constraintTop_toBottomOf="@+id/tvForgotPassword" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
