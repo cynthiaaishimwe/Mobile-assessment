@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ivMore"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Home">
@@ -60,5 +61,52 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/IvWelcome"
         app:srcCompat="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/tvProfile"
+        android:layout_width="38dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="272dp"
+        android:layout_marginTop="127dp"
+        android:layout_marginEnd="42dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivHome"
+        app:layout_constraintTop_toBottomOf="@+id/tvText"
+        app:srcCompat="@drawable/profile" />
+
+    <ImageView
+        android:id="@+id/tvSearch"
+        android:layout_width="32dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="169dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvProfile"
+        app:layout_constraintStart_toEndOf="@+id/ivHome"
+        app:layout_constraintTop_toBottomOf="@+id/tvText"
+        app:srcCompat="@drawable/search" />
+
+    <ImageView
+        android:id="@+id/ivView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="65dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvProfile"
+        app:layout_constraintStart_toEndOf="@+id/tvSearch"
+        app:layout_constraintTop_toBottomOf="@+id/tvText"/>
+
+    <ImageView
+        android:id="@+id/ivDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="66dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvProfile"
+        app:layout_constraintStart_toEndOf="@+id/tvSearch"
+        app:layout_constraintTop_toBottomOf="@+id/tvText"
+        app:srcCompat="@drawable/view" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

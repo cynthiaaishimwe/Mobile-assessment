@@ -20,7 +20,8 @@
             android:exported="false" />
         <activity
             android:name="com.example.mobile_development_assessment.ViewModel.UserViewModels"
-            android:exported="false" />
+            android:exported="false"
+            tools:ignore="Instantiatable" />
         <activity
             android:name="com.example.UI.MainActivity3login"
             android:exported="false" />
